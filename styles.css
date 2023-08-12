@@ -152,7 +152,6 @@ strong{
 
 .terceira-sec h2{
     display: flex;
-    gap: 4rem;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -171,50 +170,93 @@ strong{
     min-width: 100px;
 }
 
-.terceira-sec > div p{
+.terceira-sec > div p {
     letter-spacing: -0.5px;
     max-width: 810px;
     color: var(--white);
     text-align: justify;
+    margin: 0; /* Remover margem para evitar espaçamento extra */
 }
 
-.quarta-sec{
-    height: 400px;
+/* Estilos responsivos para larguras de tela menores */
+@media (max-width: 768px) {
+    .terceira-sec > div p {
+        max-width: 100%; /* O parágrafo ocupará todo o espaço disponível */
+    }
+}
+
+.quarta-sec {
     background-color: var(--dark3);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
+    gap: 2rem;
+    padding: 2rem;
 }
 
-.title-projetos{
+.img-projetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.title-projetos {
     font-size: 2.5rem;
     font-weight: bold;
     color: #fff;
+    text-align: center;
 }
 
+.gif-const, .gif-const2 {
+    max-width: 100%;
+    height: auto;
+    width: 250px;
+    min-width: 75px;
+}
 .mycoin-img{
     border-radius: 50%;
-    width: 250px;
 }
 
-footer{
+@media screen and (min-width: 768px) {
+    .quarta-sec {
+        gap: 3rem;
+    }
+
+    .img-projetos {
+        gap: 4rem;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .quarta-sec {
+        gap: 3rem;
+    }
+
+    .img-projetos {
+        gap: 4rem;
+    }
+}
+
+footer {
     align-items: center;
     padding: 4rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-}
-footer > div{
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
+    margin: 50px;
 }
 
-.rodape{
+footer > div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+
+.rodape {
     background-color: #2b2b41;
     width: 100%;
     height: 50px;
