@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --white: #fff;
+    --dark1: #34344e;
+    --dark2: #1f1635;
+    --dark3: #2b2b41;
+    --dark4: #4e2d9b;
+    --dark5: #6c6972;
+    --purple1: #3f0674;
+}
+
+body{
+    background-color: var(--dark1);
+    height: 100vh;
+    font-family:'Lato';
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: .8rem;
+    gap: 1rem;
+    background-color: var(--dark2);
+    min-height: 80px;
+}
+
+nav{
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: white;
+    font: 1000;
+}
+
+.nav-links:hover{
+    color: #6c6972;
+    transition: 0.6s;  
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section{
+    padding: 4rem;
+}
+
+.primeira-sec{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    align-items: center;
+    min-height: 600px;
+    flex-wrap: wrap;
+}
+
+.primeira-sec > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 300px;
+}
+
+.box-img-main{
+    max-width: 600px;
+    min-width: 50%;
+    padding: 1rem;
+}
+
+.primeira-sec p{
+    color: #fff;
+}
+
+h1{
+    font-size: 4rem;
+    color: #fff;
+    letter-spacing: 8px;
+}
+
+p{
+    font-size: 1.4rem;
+}
+
+strong{
+    color: #600385;
+}
+
+.segunda-sec{
+    min-height: 300px;
+    background-color: var(--dark3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.title-exp{
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+.segunda-sec ul li{
+    font-size: 1.3rem;
+    color: #adadad;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.segunda-sec ul li:hover{
+    color: #ffffff;
+    transition: 0.6s;  
+    cursor: default;
+}
+.segunda-sec ul{
+    gap: 3rem;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.title{
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.terceira-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.terceira-sec h2{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.terceira-sec > div{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+} 
+
+.terceira-sec > div img{
+    max-width: 450px;
+    min-width: 100px;
+}
+
+.terceira-sec > div p{
+    letter-spacing: -0.5px;
+    max-width: 810px;
+    color: var(--white);
+    text-align: justify;
+}
+
+.quarta-sec{
+    height: 400px;
+    background-color: var(--dark3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.title-projetos{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.mycoin-img{
+    border-radius: 50%;
+    width: 250px;
+}
+
+footer{
+    align-items: center;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+footer > div{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.rodape{
+    background-color: #2b2b41;
+    width: 100%;
+    height: 50px;
+}
