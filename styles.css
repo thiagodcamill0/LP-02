@@ -5,14 +5,28 @@
     padding: 0;
 }
 
+
+strong{
+    color: #2c2c8a;
+}
+
 :root{
-    --white: #fff;
+    
+    --white: #f7f7f7;
+    --dark1: #2c2c2c;
+    --dark2: #1a1a1a;
+    --dark3: #252525;
+    --dark4: #3d3d3d;
+    --dark5: #5b5b5b;
+    --purple1: #35075e; 
+
+    /* --white: #fff;
     --dark1: #34344e;
     --dark2: #1f1635;
     --dark3: #2b2b41;
     --dark4: #4e2d9b;
     --dark5: #6c6972;
-    --purple1: #3f0674;
+    --purple1: #3f0674; */
 }
 
 body{
@@ -97,10 +111,6 @@ h1{
 
 p{
     font-size: 1.4rem;
-}
-
-strong{
-    color: #600385;
 }
 
 .segunda-sec{
@@ -210,12 +220,13 @@ strong{
     text-align: center;
 }
 
-.gif-const, .gif-const2 {
+/* .gif-const, .gif-const2 {
     max-width: 100%;
     height: auto;
     width: 250px;
     min-width: 75px;
-}
+} */
+
 .mycoin-img{
     border-radius: 50%;
 }
@@ -257,7 +268,7 @@ footer > div{
 }
 
 .rodape {
-    background-color: #2b2b41;
+    background-color: var(--dark2);
     width: 100%;
     height: 50px;
 }
